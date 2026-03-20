@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+body{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    background: url(../img/escola.jpg);
+    backdrop-filter: blur(25px) brightness(0.6);
+    padding: 50px 0;
+}
+.nav-paginas{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin: 20px 0 50px 0;
+}
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-link .material-symbols-outlined{
+    font-size: 36px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+.nav-link:hover{
+    color: #a6ffa0;
+}
+.nav-link:hover .material-symbols-outlined{
+    transform: translateY(-5px);
+    text-shadow: 0 0 15px #ffffff88;
+}
+@media(max-width: 650px) {
+    nav {
+        gap: 15px;
+    }
+    .nav-link .material-symbols-outlined{
+        font-size: 28px;
+    }
+    .nav-link span {
+        font-size: 0.85em;
+    }
+}
